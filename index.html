@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    
+  <title>Frontend Mentor | Tip calculator app</title>
+
+ 
+</head>
+<body>
+
+  <main>
+    <div class="imgSplit">
+      <img class="splitter" src="./images/logo.svg" alt="">
+    </div>
+    
+    <div class="calculator">
+
+      <div class="cal-left">
+        <div class="bill">
+          <label for="">Bill</label>
+          <input type="text" class="bill-input"
+          placeholder="0">
+        </div>
+        
+        
+        <p class="tip-label">Select Tip %</p>
+        
+        <div class="percent-grid">
+          <div class="grid-item">5%</div>
+          <div class="grid-item">10%</div>
+          <div class="grid-item">15%</div>
+          <div class="grid-item">25%</div>
+          <div class="grid-item">50%</div>
+          <input type="text" class="grid-item custom" 
+          placeholder="Custom">
+        
+        </div>
+        
+        <p class="number-label">Number of People</p>
+        <input type="text" class="people"
+        placeholder="0">
+      </div>
+
+      <div class="cal-right">
+        <div class="sums">
+          <div class="sum-one">
+            <div>
+              <p class="sum-label">Tip Amount</p>
+              <p class="per">/ person</p>
+            </div> 
+
+            <div class="tip">$0.00</div>
+                        
+          </div>
+          
+          <div class="sum-two">
+            <div>
+              <p class="sum-label">Total</p>
+              <p class="per">/ person</p>
+            </div>
+            
+            <div class="total">$0.00 </div>
+          </div>
+            
+          <input type="submit" name="Reset" class="reset" 
+          value="RESET">
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </main>
+  
+  
+  
+  <script src="./index.js"></script>
+</body>
+</html>

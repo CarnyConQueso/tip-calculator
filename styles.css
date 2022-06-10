@@ -1,0 +1,243 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }  */
+* { box-sizing: border-box;}
+html { 
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+.splitter{
+    margin-top: 10.6rem;
+    width: 6rem;
+} 
+
+.imgSplit{
+    text-align: center;
+}
+
+.calculator{
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    margin-top: 5.75rem;
+    width: 66%;
+    display: flex;
+    color: hsl(186, 14%, 43%);
+    border-radius: 1rem;
+    padding: 2rem 3.2rem;
+    min-width: 255px;
+} 
+
+.cal-left{
+    flex: 50%;
+    padding-right: 1rem;
+} 
+
+.tip-label{
+    margin-top: 3.1rem;
+}
+
+.number-label{
+    margin-top: 3.1rem;
+}
+
+input{
+    display: block;
+    color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: .15rem;
+} 
+
+.bill{
+    margin-top: 1rem;
+}
+
+.bill-input{
+    width: 95%;
+    height: 3rem;
+    background: 
+    url(./images/icon-dollar.svg) no-repeat left center
+    hsl(189, 41%, 97%);
+    margin-top: .5rem;
+    text-align: right;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.percent-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: .75rem;
+    column-gap: .75rem;
+    margin-top: -.25rem;
+    
+}
+
+.grid-item{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    width: 8rem;
+    height: 3.25rem;
+    border-radius: .5rem;
+    font-size: 1.75rem;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.grid-item:hover{
+    background-color: hsl(168, 100%, 60%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.grid-select{
+    background-color: hsl(184, 14%, 56%);
+    color: hsl(183, 100%, 15%);
+}
+
+.custom{
+    background-color: hsl(189, 41%, 97%);
+    /* color: hsl(184, 14%, 56%); */
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+
+} 
+
+.custom:hover{
+    background-color: hsl(189, 41%, 97%);
+}
+
+.people{
+    background: 
+    url(./images/icon-person.svg) no-repeat left center 
+    hsl(189, 41%, 97%);
+    width: 95%;
+    height: 3rem;
+    text-align: right;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    
+}
+
+.cal-right{
+    flex: 50%;
+    padding-left: 1rem;
+} 
+
+.sums{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+}
+
+.sum-label{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.05rem;
+} 
+
+.sum-one{
+    display: flex;
+    color: hsl(184, 14%, 56%);
+    position: relative;
+    margin-top: .75rem;
+} 
+
+.per{
+    margin-top: -.85rem;
+    font-size: .85rem;
+}
+
+.tip{
+    position: absolute;
+    right: 0rem;
+    font-size: 3rem;
+}
+
+.sum-two{
+    display: flex;
+    color: hsl(184, 14%, 56%);
+    position: relative;
+    margin-top: 1.3rem;
+} 
+
+.total{
+    position: absolute;
+    right: 0rem;
+    font-size: 3rem;
+}
+
+.reset{
+    background-color: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    margin: auto;
+    border: none;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: .5rem;
+    margin-top: 8rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.25rem;
+} 
+
+.btn-light{
+    background-color: hsl(184, 14%, 56%);
+}
+
+.btn-light:hover{
+    background-color: hsl(168, 100%, 60%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1350px) {
+    .sum-one, .sum-two{
+        display: block;
+    }
+    .tip, .total{
+        position: relative;
+    }
+    .percent-grid{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    html{font-size: 12px;}
+    .calculator{display: block;}
+    .cal-left{
+        display: block;
+        padding-right: 0rem;
+    }
+    .cal-right{
+        display: block;
+        padding-left: 0rem;
+    }
+    .percent-grid{
+        grid-template-columns: auto auto auto;
+    }
+    .reset{margin-top: 0rem;}
+    .sum-one, .sum-two{display: flex;}
+    .tip, .total{position: absolute;}    
+}
+
+@media screen and (max-width: 600px){
+    .calculator{padding: 1.5rem 1.5rem;}
+    .percent-grid{
+        grid-template-columns: auto auto;
+    } 
+    .sum-one, .sum-two{display: block;}
+    .tip, .total{position: relative;}
+    .splitter{margin-top: 5.75rem;} 
+} 
+
+@media screen and (max-width: 375px) {
+    html{font-size: 10px;}
+    .splitter{margin-top: 0rem;}
+}
+
